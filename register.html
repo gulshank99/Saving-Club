@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add your own styles -->
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img class="nav-image-section" src="Assets/logo_Saving_club.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+    
+
+
+  
+    <div class="container mt-5">
+        
+        <div class="row">
+            
+            <div class="col-md-6 offset-md-3">
+                <h3>Update Details</h3>
+                <form id="myForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="Age" class="form-label">Age</label>
+                        <input type="number" class="form-control" id="age" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="returnValue" class="form-label">Value of Return</label>
+                        <input type="text" class="form-control" id="returnValue" readonly>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+ <!-- Add Bootstrap JS and Popper.js (for Bootstrap 5) -->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+
+ <!-- Add your own scripts -->
+ <script src="register.js"></script>
+
+
+</html>

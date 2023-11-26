@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your PWA Description">
+    <title>Your PWA</title>
+
+     <!-- Add a manifest file for PWA -->
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add your own styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img class="nav-image-section" src="Assets/logo_Saving_club.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+ 
+
+
+
+<!-- Full Page Background Animation -->
+    <!-- <div class="background-animation">
+    <div class="invitation-message animate__animated animate__fadeInUp">Let's start saving together.</div>
+    </div> -->
+ 
+ 
+
+
+
+ 
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <!-- Your cards and Join the Club Button go here -->
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 d-flex flex-row check-box-container">
+
+                    <div class="card-img-container m-2">
+                        <img src="https://images.dog.ceo/breeds/terrier-irish/n02093991_4501.jpg" class="card-img-top" alt="Image 1">
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="">9%<sub>+1% Cashback</sub> </h3>
+                        <p class="">Annual Return</p>
+                        <p class="">₹10,000</p>
+                        <p class="">1 Year Lock-In</p>  
+                    </div>
+
+                    <div class="form-check  check-box-container">
+                        <input class="form-check-input" type="checkbox" value="" id="card1">
+                        <!-- <label class="form-check-label" for="card1"></label> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 d-flex flex-row check-box-container">
+
+                    <div class="card-img-container m-2">
+                        <img src="https://images.dog.ceo/breeds/terrier-irish/n02093991_4501.jpg" class="card-img-top" alt="Image 1">
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="">8.5%<sub>+.5% Cashback</sub> </h3>
+                        <p class="">Annual Return</p>
+                        <p class="">₹10,000</p>
+                        <p class="">1 Year Lock-In</p>  
+                    </div>
+
+                    <div class="form-check  check-box-container">
+                        <input class="form-check-input" type="checkbox" value="" id="card2">
+                        <!-- <label class="form-check-label" for="card1"></label> -->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 d-flex flex-row check-box-container">
+
+                    <div class="card-img-container m-2">
+                        <img src="https://images.dog.ceo/breeds/terrier-irish/n02093991_4501.jpg" class="card-img-top" alt="Image 1">
+                    </div>
+
+                    <div class="card-body">
+                        <h3 class="">8%<sub>.25% Cashback</sub></h3>
+                        <p class="">Annual Return</p>
+                        <p class="">₹10,000</p>
+                        <p class="">1 Year Lock-In</p>  
+                    </div>
+
+                    <div class="form-check  check-box-container">
+                        <input class="form-check-input" type="checkbox" value="" id="card3">
+                        <!-- <label class="form-check-label" for="card1"></label> -->
+                    </div>
+
+                </div>
+            </div>
+
+            
+        <!-- Join the Club Button -->
+        <div class="text-center">
+            <button type="button" class="btn btn-primary mt-1" id="joinButton" disabled onclick="joinClub()">Join the CLUB</button>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js (for Bootstrap 5) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+
+    <!-- Add your own scripts -->
+    <script src="app.js"></script>
+
+    
+
+
+     <!-- <script>
+        
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {
+                console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(error => {
+                console.error('Service Worker registration failed:', error);
+            });
+    }
+ 
+    </script> -->
+
+</body>
+
+</html>
